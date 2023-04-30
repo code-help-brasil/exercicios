@@ -1,5 +1,3 @@
-package basics
-
 import java.util.*
 
 /**
@@ -10,7 +8,7 @@ import java.util.*
  * Digite outro valor: 5
  * A soma entre 8 e 5 é igual a 13.
  * */
-fun ex04() {
+fun ex004() {
     val scanner = Scanner(System.`in`)
 
     print("Digite um valor: ")
@@ -25,5 +23,5 @@ fun ex04() {
 }
 
 internal fun main() {
-    ex04()
+    ex004()
 }
