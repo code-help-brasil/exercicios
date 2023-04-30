@@ -1,5 +1,3 @@
-package basics
-
 import java.text.NumberFormat
 import java.time.LocalDate
 import java.time.format.TextStyle
@@ -13,7 +11,7 @@ import java.util.*
  * Salário: 1850,45
  * O funcionário Maria do Carmo tem um salário de R$1850,45 em junho.
  */
-fun ex03() {
+fun ex003() {
     val scanner = Scanner(System.`in`)
 
     print("Nome do Funcionário: ")
@@ -44,5 +42,5 @@ fun ex03() {
 }
 
 internal fun main() {
-    ex03()
+    ex003()
 }

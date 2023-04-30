@@ -1,5 +1,3 @@
-package basics
-
 import java.util.*
 
 /**
@@ -8,7 +6,7 @@ import java.util.*
  * Qual é o seu nome? João da Silva
  * Olá João da Silva, é um prazer te conhecer!
  * */
-fun ex02(){
+fun ex002(){
     val scanner = Scanner(System.`in`)
     print("Qual é o seu nome? ")
     val nome = scanner.nextLine()
@@ -16,5 +14,5 @@ fun ex02(){
 }
 
 internal fun main(){
-    ex02()
+    ex002()
 }

@@ -1,5 +1,3 @@
-package basics
-
 import java.math.BigDecimal
 import java.util.Scanner
 
@@ -11,7 +9,7 @@ import java.util.Scanner
  * Nota 2: 8,5
  * A média entre 4,5 e 8,5 é igual a 6,5
  * */
-fun ex05(){
+fun ex005(){
     val scanner = Scanner(System.`in`)
     print("Nota 1: ")
     val nota1 = scanner.nextBigDecimal()
@@ -23,5 +21,5 @@ fun ex05(){
 
 
 internal fun main() {
-    ex05()
+    ex005()
 }
