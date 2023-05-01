@@ -17,7 +17,7 @@ public class Ex031 {
         String resposta = sc.nextLine();
         Random rand = new Random();
         String escolha_computador = opcoes[rand.nextInt(opcoes.length)];
-        if (resposta == escolha_computador) {
+        if (resposta.equals(escolha_computador)) {
             System.out.printf("Empate voce escolheu %s e o computaodor escolheu %s ", resposta, escolha_computador);
         } else if (escolha_computador == "tesoura" && resposta == "papel") {
             System.out.printf("Derrota voce escolheu %s e o computaodor escolheu %s ", resposta, escolha_computador);
