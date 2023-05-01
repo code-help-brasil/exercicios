@@ -3,7 +3,6 @@ calcule a idade dela e depois mostre se ela pode ou não votar. */
 
 package org.example;
 
-import java.util.Calendar;
 import java.util.Scanner;
 import java.time.Year;
 
@@ -27,7 +26,6 @@ public class Ex018 {
         } else {
             System.out.println("O voto para você é opcional");
         }
-
         sc.close();
 
     }
