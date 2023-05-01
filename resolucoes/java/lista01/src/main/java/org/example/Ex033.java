@@ -1,12 +1,6 @@
-/*O Índice de Massa Corpórea (IMC) é um valor calculado baseado na altura e no peso de uma pessoa. De acordo com o valor do IMC, podemos classificar o 
-indivíduo dentro de certas faixas.
-- abaixo de 18.5: Abaixo do peso
-- entre 18.5 e 25: Peso ideal
-- entre 25 e 30: Sobrepeso
-- entre 30 e 40: Obesidade
-- acima de 40: Obseidade mórbida 
-Obs: O IMC é calculado pela expressão peso/altura² (peso dividido pelo quadrado da altura)
-*/
+/*Escreva um programa para aprovar ou não o empréstimo bancário para a compra de uma casa.
+ O programa vai perguntar o valor da casa, o salário do comprador e em quantos anos ele vai pagar.
+ Calcule o valor da prestação mensal, sabendo que ela não pode exceder 30% do salário ou então o empréstimo será negado. */
 
 package org.example;
 
@@ -18,31 +12,27 @@ public class Ex033 {
     }
 
     public static void main() {
-
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Digite o seu peso em quilogramas: ");
-        double peso = sc.nextDouble();
+        System.out.print("Valor da casa: ");
+        double valorCasa = sc.nextDouble();
 
-        System.out.print("Digite a sua altura em metros: ");
-        double altura = sc.nextDouble();
+        System.out.print("Salário do comprador: ");
+        double salario = sc.nextDouble();
 
-        double imc = peso / (altura * altura);
+        System.out.print("Quantos anos vai pagar: ");
+        int anos = sc.nextInt();
 
-        System.out.printf("Seu IMC é: %.2f\n", imc);
+        int meses = anos * 12;
+        double prestacao = valorCasa / meses;
 
-        if (imc < 18.5) {
-            System.out.println("Abaixo do peso");
-        } else if (imc < 25) {
-            System.out.println("Peso ideal");
-        } else if (imc < 30) {
-            System.out.println("Sobrepeso");
-        } else if (imc < 40) {
-            System.out.println("Obesidade");
+        if (prestacao <= salario * 0.3) {
+            System.out.printf("Empréstimo aprovado. Valor da prestação: R$ %.2f%n", prestacao);
         } else {
-            System.out.println("Obesidade mórbida");
+            System.out.println("Empréstimo negado. Valor da prestação excede 30% do salário.");
         }
 
         sc.close();
     }
+       
 }

@@ -1,11 +1,11 @@
-/*Uma empresa de aluguel de carros precisa cobrar pelos seus serviços. O 
-aluguel de um carro custa R$90 por dia para carro popular e R$150 por dia para carro de luxo. Além disso, o cliente paga por Km percorrido. Faça um programa que leia o tipo de carro alugado (popular ou luxo), quantos dias de aluguel e quantos Km foram percorridos. No final mostre o preço a ser pago de acordo com a tabela a seguir:
-- Carros populares (aluguel de R$90 por dia)
-- Até 100Km percorridos: R$0,20 por Km
-- Acima de 100Km percorridos: R$0,10 por Km
-- Carros de luxo (aluguel de R$150 por dia)
-- Até 200Km percorridos: R$0,30 por Km
-- Acima de 200Km percorridos: R$0,25 por Km */
+/*O Índice de Massa Corpórea (IMC) é um valor calculado baseado na altura e no peso de uma pessoa. De acordo com o valor do IMC, podemos classificar o 
+indivíduo dentro de certas faixas.
+- abaixo de 18.5: Abaixo do peso
+- entre 18.5 e 25: Peso ideal
+- entre 25 e 30: Sobrepeso
+- entre 30 e 40: Obesidade
+- acima de 40: Obseidade mórbida
+*/
 
 package org.example;
 
@@ -13,43 +13,34 @@ import java.util.Scanner;
 
 public class Ex034 {
     public static void main(String[] args) {
-        Ex034.main();
+        Ex033.main();
     }
-
     public static void main() {
+
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Digite o tipo de carro (popular ou luxo): ");
-        String tipo = sc.nextLine();
+        System.out.print("Digite o seu peso em quilogramas: ");
+        double peso = sc.nextDouble();
 
-        System.out.print("Digite a quantidade de dias de aluguel: ");
-        int dias = sc.nextInt();
+        System.out.print("Digite a sua altura em metros: ");
+        double altura = sc.nextDouble();
 
-        System.out.print("Digite a quantidade de Km percorridos: ");
-        int km = sc.nextInt();
+        double imc = peso / (altura * altura);
 
-        double valorAluguel = 0;
-        double valorKm = 0;
+        System.out.printf("Seu IMC é: %.2f\n", imc);
 
-        if (tipo.equalsIgnoreCase("popular")) {
-            valorAluguel = dias * 90;
-            if (km <= 100) {
-                valorKm = km * 0.2;
-            } else {
-                valorKm = km * 0.1;
-            }
-        } else if (tipo.equalsIgnoreCase("luxo")) {
-            valorAluguel = dias * 150;
-            if (km <= 200) {
-                valorKm = km * 0.3;
-            } else {
-                valorKm = km * 0.25;
-            }
+        if (imc < 18.5) {
+            System.out.println("Abaixo do peso");
+        } else if (imc < 25) {
+            System.out.println("Peso ideal");
+        } else if (imc < 30) {
+            System.out.println("Sobrepeso");
+        } else if (imc < 40) {
+            System.out.println("Obesidade");
+        } else {
+            System.out.println("Obesidade mórbida");
         }
-        double valorTotal = valorAluguel + valorKm;
-        System.out.printf("Valor total a pagar: R$%.2f", valorTotal);
 
         sc.close();
     }
-
 }
