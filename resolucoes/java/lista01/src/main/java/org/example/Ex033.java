@@ -4,7 +4,9 @@ indivíduo dentro de certas faixas.
 - entre 18.5 e 25: Peso ideal
 - entre 25 e 30: Sobrepeso
 - entre 30 e 40: Obesidade
-- acima de 40: Obseidade mórbida */
+- acima de 40: Obseidade mórbida 
+Obs: O IMC é calculado pela expressão peso/altura² (peso dividido pelo quadrado da altura)
+*/
 
 package org.example;
 
