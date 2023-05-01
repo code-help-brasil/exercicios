@@ -16,6 +16,6 @@ public class Ex002 {
     String nome = sc.nextLine();
     System.out.println("Olá "+ nome +" é um prazer te conhecer!");
     sc.close();
-    
+   
    }
 }
