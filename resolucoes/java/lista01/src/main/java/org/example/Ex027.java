@@ -22,8 +22,8 @@ public class Ex027 {
         Float media = (nota1 + nota2) / 2;
         if (media >= 7) {
             System.out.println("APROVADO");
-        } else if (media <= 6.9 || media <= 5) {
-            System.out.println("RECUPERAÇÃO");
+        } else if (media >= 6.9 || media >= 5) {
+            System.out.println("RECUPERAÇAO");
         } else {
             System.out.println("REPROVADO");
         }
