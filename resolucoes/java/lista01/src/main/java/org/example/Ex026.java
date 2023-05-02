@@ -1,3 +1,4 @@
+
 /*Escreva um algoritmo que leia dois números inteiros e compare-os, mostrando na tela uma das mensagens abaixo:
 - O primeiro valor é o maior
 - O segundo valor é o maior
@@ -28,5 +29,4 @@ public class Ex026 {
         sc.close();
 
     }
-
 }
