@@ -4,6 +4,7 @@ vai tentar descobrir qual foi o valor sorteado.
 
 package org.example;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Ex032 {
@@ -13,23 +14,15 @@ public class Ex032 {
 
     public static void main() {
         Scanner sc = new Scanner(System.in);
-        double valorCasa = sc.nextDouble();
-
-        System.out.print("Salário do comprador: ");
-        double salario = sc.nextDouble();
-
-        System.out.print("Quantos anos vai pagar: ");
-        int anos = sc.nextInt();
-
-        int meses = anos * 12;
-        double prestacao = valorCasa / meses;
-
-        if (prestacao <= salario * 0.3) {
-            System.out.printf("Empréstimo aprovado. Valor da prestação: R$ %.2f%n", prestacao);
+        Random rand = new Random();
+        int numeroAleatorio = rand.nextInt(5) + 1;
+        System.out.print("Digite um número: ");
+        Integer escolha = sc.nextInt();
+        if (numeroAleatorio == escolha) {
+            System.out.printf("Voce ganhou!");
         } else {
-            System.out.println("Empréstimo negado. Valor da prestação excede 30% do salário.");
+            System.out.printf("O numero era %d", numeroAleatorio);
         }
-
         sc.close();
     }
 
