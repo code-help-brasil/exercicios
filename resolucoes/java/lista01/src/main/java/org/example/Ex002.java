@@ -1,21 +1,15 @@
-/***
- * Faça um programa que leia o nome de uma pessoa e mostre uma mensagem de boas vindas para ela:
- * Ex:
- * Qual é o seu nome? João da Silva
- * Olá João da Silva, é um prazer te conhecer!
- * */
+import java.util.Scanner; //Precisa importar isso para ser capaz de ler
 
-package org.example;
-
-import java.util.Scanner;
-
-public class Ex002 {
-   public static void main(String[] args) {
-    Scanner sc = new Scanner(System.in);
-    System.out.print("Qual é o seu nome?: ");
-    String nome = sc.nextLine();
-    System.out.println("Olá "+ nome +" é um prazer te conhecer!");
-    sc.close();
-   
-   }
+public class Ex002{  
+    public void run002(){
+        Scanner inputUtilizador = new Scanner(System.in);  // Cria um objeto para ler variáveis
+        System.out.println("Qual é o seu nome?");
+    
+        String nome = inputUtilizador.nextLine();  // Lê o que o utilizador digitou
+        System.out.println("Olá " + nome + ", é um prazer te conhecer!");  // Escreve no ecrã juntamente com a variável
+    }
+    
+    public static void main(String[] args){
+        new Exercicios().run002();
+    }
 }
