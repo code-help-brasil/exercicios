@@ -4,7 +4,7 @@ reta1 = float(input('Digite o tamanho da primeira reta: '))
 reta2 = float(input('Digite o tamanho da segunda reta: '))
 reta3 = float(input('Digite o tamanho da terceira reta: '))
 
-if reta1 + reta2 < reta3 or reta2 + reta3 < reta1 or reta3 + reta1 < reta2:
+if reta1 < reta2 + reta3 and reta2 < reta3 + reta1 and reta3 < reta1 + reta2:
     print('É possível formar um triângulo com essas três retas.')
 else:
     print('Não é possível formar um triângulo para essas três retas')
