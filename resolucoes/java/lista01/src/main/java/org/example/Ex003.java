@@ -1,20 +1,24 @@
-import java.util.Scanner;
 
-public class Ex003
-{  
-    public void run003(){
-        Scanner inputUtilizador = new Scanner(System.in);
-        
-        System.out.println("Nome do Funcionário: ");
-        String nome = inputUtilizador.nextLine();
-        
-        System.out.println("Salário: ");
-        Double salario = inputUtilizador.nextDouble(); // Teste com por exemplo 1304.34
-        
-        System.out.println("O funcionário " + nome + " tem um salário de R$" + salario + " em Junho.");
+
+
+
+
+package org.example;
+
+import java.util.Scanner; //Precisa importar isso para ser capaz de ler
+
+public class Ex003{ 
+    public static void main(String[] args){
+        Ex003.main();
+    } 
+    public static void main(){
+        Scanner sc = new Scanner(System.in);  // Cria um objeto para ler variáveis
+        System.out.println("Qual é o seu nome?");
+    
+        String nome = sc.nextLine();  // Lê o que o utilizador digitou
+        System.out.println("Olá " + nome + ", é um prazer te conhecer!");  // Escreve no ecrã juntamente com a variável
+        sc.close();
     }
     
-    public static void main(String[] args){
-        new Exercicios().run003();
-    }
+    
 }
