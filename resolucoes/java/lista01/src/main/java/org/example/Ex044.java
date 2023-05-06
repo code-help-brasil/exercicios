@@ -19,12 +19,19 @@ public class Ex044 {
     }
     public static void main() {
         Scanner sc = new Scanner(System.in);
+
         System.out.print("Qual valor inicial da contagem?: ");
+
         int inicial = sc.nextInt();
+
         System.out.printf("Qual valor final?: ");
-        int valor_final =sc.nextInt();
+
+        int valor_final = sc.nextInt();
+
         System.out.print("Qual incremento?: ");
+
         int incremento = sc.nextInt();
+        
         while (inicial <= valor_final){
             System.out.println(inicial);
             inicial += incremento;
