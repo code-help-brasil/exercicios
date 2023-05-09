@@ -15,9 +15,9 @@ public class Ex069 {
 
     public static void main() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Digite o primeiro termo da PA: ");
+        System.out.print("Digite o primeiro termo da PA: ");
         int termo = sc.nextInt();
-        System.out.println("Qual a razão da PA: ");
+        System.out.print("Qual a razao da PA: ");
         int razao = sc.nextInt();
         int termoAnterior = termo;
         int progressao = termo;
