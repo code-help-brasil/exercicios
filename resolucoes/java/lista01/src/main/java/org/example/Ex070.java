@@ -17,14 +17,15 @@ public class Ex070 {
 
         for (int i = 0; i < 10; i++) {
 
-            System.out.println(atual + " ");
+            System.out.print(atual + " ");
 
             int proximo = atual + anterior;
 
             anterior = atual;
-            
+
             atual = proximo;
 
         }
+
     }
 }
