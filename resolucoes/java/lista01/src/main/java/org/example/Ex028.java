@@ -5,12 +5,16 @@ Faça um programa que leia a largura e o comprimento de um terreno retangular, c
     Acima de 500m² = TERRENO VIP
 */
 
+package org.example;
 
 import java.util.Scanner;
 
 public class Ex028
 {  
-    public void run028(){
+    public static void main(String[] args){
+        Ex028.main();
+    }
+    public static void main(){
         Scanner inputUtilizador = new Scanner(System.in);
         
         System.out.println("Digite a largura do terreno.");
@@ -31,9 +35,7 @@ public class Ex028
         else{
             System.out.println("TERRENO VIP");
         }
+        inputUtilizador.close();
     }
     
-    public static void main(String[] args){
-        new Exercicios().run028();
-    }
 }

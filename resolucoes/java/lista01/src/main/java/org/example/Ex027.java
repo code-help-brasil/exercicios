@@ -4,12 +4,17 @@ Crie um programa que leia duas notas de um aluno e calcule a sua média, mostran
     Média entre 5.0 e 6.9: RECUPERAÇÃO
     Média 7.0 ou superior: APROVADO
 */
-
+package org.example;
 import java.util.Scanner;
 
-public class Ex027
-{  
-    public void run027(){
+public class Ex027{
+
+
+public static void main(String[] args){
+    Ex027.run027();
+}
+
+    public static void run027(){
         Scanner inputUtilizador = new Scanner(System.in);
         
         System.out.println("Digite a primeira nota.");
@@ -30,9 +35,9 @@ public class Ex027
         else{
             System.out.println("Aprovado");
         }
+        inputUtilizador.close();
+
     }
     
-    public static void main(String[] args){
-        new Exercicios().run027();
-    }
+    
 }
