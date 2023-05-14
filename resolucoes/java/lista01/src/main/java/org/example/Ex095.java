@@ -1,16 +1,18 @@
 /*
- Desenvolva um algoritmo que leia dois valores pelo teclado e passe esses 
-valores para um procedimento Somador() que vai calcular e mostrar a soma entre eles.
+ Refaça o exercício 90, só que agora em forma de função Somador(), que vai 
+receber dois parâmetros e vai retornar o resultado da soma entre eles para o 
+programa principal.
  */
+
+
 
 package org.example;
 
 import java.util.Scanner;
 
-public class Ex090 {
-
-    public static void somador(int x, int y) {
-        System.out.print(x+ y);
+public class Ex095 {
+    public static int somador(int x, int y) {
+        return x + y;
     }
 
     public static void main(String[] args) {
@@ -23,7 +25,7 @@ public class Ex090 {
         System.out.print("Digite um número: ");
         int num2 = sc.nextInt();
 
-        somador(num1, num2);
+        System.out.println(somador(num1, num2));
         sc.close();
     }
 }
