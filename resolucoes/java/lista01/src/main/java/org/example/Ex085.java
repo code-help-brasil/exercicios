@@ -16,7 +16,7 @@ public class Ex085 {
         String[] nomes = new String[5];
         char[] sexos = new char[5];
         double[] salarios = new double[5];
-
+        
         for (int i = 0; i < 5; i++) {
             System.out.println("Funcionário " + (i + 1));
             System.out.print("Digite o nome: ");
