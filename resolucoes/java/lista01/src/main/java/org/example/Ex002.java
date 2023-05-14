@@ -7,6 +7,7 @@ public class Ex002{
     public static void main(String[] args){
         Ex002.main();
     }
+    
     public static void main(){
         Scanner inputUtilizador = new Scanner(System.in);  // Cria um objeto para ler variáveis
         System.out.println("Qual é o seu nome?");
