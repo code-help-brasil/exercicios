@@ -1,4 +1,5 @@
-/*Desenvolva um programa que faça o sorteio de 20 números entre 0 e 10 e 
+/*
+Desenvolva um programa que faça o sorteio de 20 números entre 0 e 10 e 
 mostre na tela:
 - Quais foram os números sorteados
 - Quantos números estão acima de 5
@@ -35,9 +36,9 @@ public class Ex050 {
             }
             contador++;
         }
-        System.out.println("A lista é: " + lista );
-        System.out.printf("Foram registrados %d números maiores que 5\n",maior_5);
-        System.out.printf("Foram resgistrados %d números divisiveis por 3",divi_3);
+        System.out.println("A lista é: " + lista);
+        System.out.printf("Foram registrados %d números maiores que 5\n", maior_5);
+        System.out.printf("Foram resgistrados %d números divisiveis por 3", divi_3);
         sc.close();
     }
 
