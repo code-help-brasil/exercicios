@@ -19,7 +19,7 @@ package org.example;
 
 import java.util.Scanner;
 
-public class Ex89 {
+public class Ex089 {
 
     public static void gerador(String mensagem, int vezes, int estilo) {
         if (estilo == 1) {

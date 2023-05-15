@@ -11,7 +11,8 @@ import java.util.Scanner;
 public class Ex096 {
 
     public static Float Media(Float nota1,Float nota2) {
-        return nota1/nota2;
+        Float media = (Float) (nota1+nota2) / 2;
+        return media;
     }
     public static void main(String[] args) {
 
@@ -24,7 +25,7 @@ public class Ex096 {
         Float nota2 = sc.nextFloat();
 
         System.out.print(Media(nota1,nota2));
-        
+
         sc.close();
     }
 }
